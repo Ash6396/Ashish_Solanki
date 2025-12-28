@@ -1,0 +1,77 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#070913"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="54"/>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="26" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="260" cy="520" r="260" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="980" cy="170" r="240" fill="url(#glow)" filter="url(#blur)"/>
+
+  <!-- App shell -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="110" width="980" height="455" rx="26" fill="#0F172A" stroke="#1F2937"/>
+
+    <!-- Top nav -->
+    <rect x="140" y="140" width="920" height="56" rx="18" fill="#111827" stroke="#1F2937"/>
+    <text x="170" y="176" fill="#FDE68A" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="20" font-weight="900">Anime</text>
+    <text x="238" y="176" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="20" font-weight="900">Hub</text>
+
+    <g fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="14" font-weight="650">
+      <text x="420" y="175">Home</text>
+      <text x="490" y="175">Movies</text>
+      <text x="570" y="175">TV Series</text>
+      <text x="670" y="175">Most Popular</text>
+      <text x="790" y="175">Top Airing</text>
+    </g>
+
+    <!-- Hero area -->
+    <text x="170" y="265" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="44" font-weight="900">Anime Streaming Website</text>
+    <text x="170" y="305" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="600">Search, browse, and explore titles with a clean responsive UI.</text>
+
+    <!-- Search bar -->
+    <rect x="170" y="340" width="610" height="54" rx="27" fill="#0B1224" stroke="#22304F"/>
+    <text x="200" y="374" fill="#6B7280" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="16" font-weight="600">Search anime…</text>
+    <circle cx="745" cy="367" r="20" fill="url(#accent)"/>
+    <path d="M740 362a7 7 0 1 0 0.001 14A7 7 0 0 0 740 362Zm14.5 14.5-6.2-6.2" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- CTA button -->
+    <rect x="170" y="420" width="420" height="56" rx="20" fill="url(#accent)"/>
+    <text x="300" y="456" fill="#111827" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="900">View Full Site</text>
+
+    <!-- Decorative thumbnails on right (generic, no characters) -->
+    <g opacity="0.95">
+      <rect x="820" y="235" width="220" height="138" rx="18" fill="#0B1224" stroke="#22304F"/>
+      <rect x="844" y="260" width="172" height="16" rx="8" fill="#1F2937"/>
+      <rect x="844" y="286" width="132" height="12" rx="6" fill="#1F2937"/>
+      <rect x="844" y="310" width="156" height="12" rx="6" fill="#1F2937"/>
+      <rect x="844" y="332" width="92" height="12" rx="6" fill="#1F2937"/>
+
+      <rect x="820" y="396" width="220" height="138" rx="18" fill="#0B1224" stroke="#22304F"/>
+      <rect x="844" y="422" width="172" height="16" rx="8" fill="#1F2937"/>
+      <rect x="844" y="448" width="132" height="12" rx="6" fill="#1F2937"/>
+      <rect x="844" y="472" width="156" height="12" rx="6" fill="#1F2937"/>
+      <rect x="844" y="494" width="92" height="12" rx="6" fill="#1F2937"/>
+    </g>
+  </g>
+
+  <!-- Caption -->
+  <text x="110" y="620" fill="#94A3B8" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="16" font-weight="650">Frontend • React.js • Tailwind CSS • Responsive UI</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#080A12"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0.10"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Subtle glow blobs -->
+  <circle cx="280" cy="520" r="240" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="980" cy="180" r="220" fill="url(#glow)" filter="url(#blur)"/>
+
+  <!-- Left title block -->
+  <g>
+    <text x="120" y="210" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="56" font-weight="800">RBAC Configurator</text>
+    <text x="120" y="270" fill="#A1A1AA" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="28" font-weight="500">Role-Based Access Control • Next.js • TypeScript</text>
+    <text x="120" y="335" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" font-weight="450">A compact UI for defining roles, permissions, and policies</text>
+    <text x="120" y="365" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" font-weight="450">with secure auth powered by Supabase.</text>
+
+    <!-- Pill tags -->
+    <g>
+      <rect x="120" y="410" width="140" height="40" rx="20" fill="#0F172A" stroke="#1F2937"/>
+      <text x="150" y="437" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="600">Policies</text>
+
+      <rect x="275" y="410" width="170" height="40" rx="20" fill="#0F172A" stroke="#1F2937"/>
+      <text x="308" y="437" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="600">Permissions</text>
+
+      <rect x="460" y="410" width="120" height="40" rx="20" fill="#0F172A" stroke="#1F2937"/>
+      <text x="495" y="437" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="600">Roles</text>
+    </g>
+  </g>
+
+  <!-- Right "diagram" card -->
+  <g>
+    <rect x="690" y="150" width="390" height="375" rx="18" fill="#0B1224" stroke="#1F2A44"/>
+    <rect x="710" y="175" width="350" height="44" rx="10" fill="#0F1A33" stroke="#22304F"/>
+    <text x="732" y="205" fill="#E5E7EB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="700">policy  allow  (member,  read,  repo)</text>
+
+    <rect x="710" y="235" width="350" height="270" rx="10" fill="#0F1A33" stroke="#22304F"/>
+
+    <text x="732" y="270" fill="#93C5FD" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="700">role</text>
+    <text x="780" y="270" fill="#E5E7EB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="700">admin</text>
+    <text x="850" y="270" fill="#9CA3AF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="600">{</text>
+
+    <text x="752" y="310" fill="#A7F3D0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="600">+ manage_users</text>
+    <text x="752" y="340" fill="#A7F3D0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="600">+ manage_roles</text>
+    <text x="752" y="370" fill="#A7F3D0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="600">+ audit_access</text>
+
+    <text x="732" y="415" fill="#93C5FD" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="700">role</text>
+    <text x="780" y="415" fill="#E5E7EB" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="700">member</text>
+    <text x="875" y="415" fill="#9CA3AF" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="16" font-weight="600">{</text>
+
+    <text x="752" y="455" fill="#FDE68A" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="600">+ read_repo</text>
+    <text x="752" y="485" fill="#FDE68A" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="15" font-weight="600">+ create_issue</text>
+  </g>
+
+  <!-- Simple connector lines -->
+  <g opacity="0.85" stroke="#3B82F6" stroke-width="2">
+    <path d="M650 270 C 610 270, 610 270, 570 270"/>
+    <path d="M650 420 C 610 420, 610 420, 570 420"/>
+  </g>
+
+  <!-- Small nodes on left of card -->
+  <g>
+    <rect x="540" y="245" width="70" height="50" rx="12" fill="#0F172A" stroke="#1F2937"/>
+    <circle cx="565" cy="270" r="10" fill="#111827" stroke="#60A5FA" stroke-width="2"/>
+    <path d="M580 278c8-7 10-16 0-22" stroke="#93C5FD" stroke-width="2" fill="none"/>
+
+    <rect x="540" y="395" width="70" height="50" rx="12" fill="#0F172A" stroke="#1F2937"/>
+    <rect x="558" y="412" width="34" height="16" rx="6" fill="#111827" stroke="#60A5FA" stroke-width="2"/>
+  </g>
+</svg>
