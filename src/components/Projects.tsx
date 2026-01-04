@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
       techStack: ["React.js", "Tailwind CSS"],
       image: animeSite,
       githubUrl: "",
-      liveUrl: "",
+      liveUrl: "https://ani-xind.vercel.app/",
       category: "Frontend",
       icon: Sparkles,
     },
